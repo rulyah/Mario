@@ -40,12 +40,15 @@ public class Player : MonoBehaviour, ICollidable
 
     private void Update()
     {
-        var moveVector = new Vector3(_runSpeed, 0.0f);
-        if (moveVector != Vector3.zero)
+        if (isLive)
         {
-            transform.forward = moveVector.normalized;
+            var moveVector = new Vector3(_runSpeed, 0.0f);
+            if (moveVector != Vector3.zero)
+            {
+                transform.forward = moveVector.normalized;
+            }
+            transform.position += moveVector * Time.deltaTime;
         }
-        transform.position += moveVector * Time.deltaTime;
     }
     
 }

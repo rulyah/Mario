@@ -57,7 +57,7 @@ namespace Machine
 
         private void OnFinishPlaceEnter()
         {
-            _core.uiController.victoryScreen.Show();
+            ChangeState(new VictoryState(_core));
         }
 
         public override void OnExit()

@@ -13197,7 +13197,7 @@ MonoBehaviour:
   _fabric: {fileID: 1709979495}
   _level: {fileID: 181843188}
   _input: {fileID: 1463098362}
-  enemyControllers: []
+  _ui: {fileID: 292946720}
 --- !u!4 &1916484452
 Transform:
   m_ObjectHideFlags: 0
